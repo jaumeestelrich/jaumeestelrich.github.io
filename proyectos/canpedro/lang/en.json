@@ -1,0 +1,46 @@
+  {
+    "logo": "Ca'n Pedro Restaurant",
+
+    "menu_inicio": "Home",
+    "menu_carta": "Menu",
+    "menu_corralet": "Es Corralet",
+    "menu_galeria": "Gallery",
+    "menu_contacto": "Contact",
+
+    "hero_titulo": "Welcome to Ca'n Pedro",
+    "hero_subtitulo": "Traditional Majorcan cuisine",
+    "btn_reservar": "Book a table",
+
+    "home_secciones": "Explore our sections",
+    "home_carta_titulo": "Our Menu",
+    "home_corralet_titulo": "Es Corralet",
+    "home_galeria_titulo": "Gallery",
+    "home_contacto_titulo": "Contact",
+
+    "title_carta": "Menu - Ca'n Pedro",
+    "carta_titulo": "Our Menu",
+    "carta_texto": "Here you will find your menu content, PDFs, or photos.",
+
+    "title_contacto": "Contact - Ca'n Pedro",
+    "contacto_titulo": "Contact",
+    "contacto_whatsapp_titulo": "WhatsApp",
+    "contacto_whatsapp_texto": "Quick reservation or inquiry",
+    "contacto_whatsapp_btn": "WhatsApp",
+    "contacto_telefono_titulo": "Phone",
+    "contacto_telefono_texto": "Call us directly from your mobile",
+    "contacto_telefono_btn": "Call",
+    "contacto_email_titulo": "Email",
+    "contacto_email_texto": "Write to us for information",
+    "contacto_email_btn": "Email",
+    "contacto_como_llegar": "How to get there",
+
+    "title_corralet": "Es Corralet d'en Pep",
+    "corralet_titulo": "Es Corralet d'en Pep",
+    "corralet_texto": "Private space for celebrations, birthdays, meetings, and events.",
+    "corralet_galeria_titulo": "Gallery",
+
+    "title_galeria": "Gallery - Ca'n Pedro",
+    "galeria_titulo": "Gallery",
+
+    "footer_derechos": "© 2025 Ca'n Pedro - All rights reserved"
+  }
