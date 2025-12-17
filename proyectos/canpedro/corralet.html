@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-lang="title_corralet">Es Corralet d'en Pep</title>
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    <!-- Lightbox galería -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 </head>
+
 <body>
 
+<!-- ================= HEADER ================= -->
 <header class="header">
-    <div class="logo" data-lang="logo">Restaurante Ca'n Pedro Grill</div>
+    <div class="logo" data-lang="logo">Restaurante Ca'n Pedro</div>
 
     <nav class="nav">
         <a href="index.html" data-lang="menu_inicio">Inicio</a>
@@ -20,6 +27,7 @@
         <a href="contacto.html" data-lang="menu_contacto">Contacto</a>
     </nav>
 
+    <!-- Selector de idioma -->
     <div class="language-selector">
         <button data-lang-btn="es"><img src="img/flags/es.png" alt="ES"></button>
         <button data-lang-btn="en"><img src="img/flags/en.png" alt="EN"></button>
@@ -30,28 +38,50 @@
     </div>
 </header>
 
-<section class="pagina">
-    <!-- ESTA LÍNEA NO SE TRADUCE (nombre propio) -->
+<!-- ================= CONTENIDO PRINCIPAL ================= -->
+<main class="pagina">
+
+    <!-- Presentación del espacio -->
+    <!-- Nombre propio: no se traduce -->
     <h1 data-lang="corralet_titulo">Es Corralet d'en Pep</h1>
 
-    <p data-lang="corralet_texto">Espacio privado para celebraciones, cumpleaños, reuniones y eventos.</p>
-</section>
+    <p data-lang="corralet_texto">
+        Espacio privado para celebraciones, cumpleaños, reuniones y eventos.
+    </p>
 
+</main>
+
+<!-- ================= GALERÍA CORRALET ================= -->
 <section class="galeria pagina">
-    <h1 data-lang="corralet_galeria_titulo">Galería</h1>
+    <h2 data-lang="corralet_galeria_titulo">Galería</h2>
+
     <div class="galeria-grid">
-        <a href="img/barbacoa.jpg" class="glightbox"><img src="img/barbacoa.jpg" alt=""></a>
-        <a href="img/corralet.jpg" class="glightbox"><img src="img/corralet.jpg" alt=""></a>
-        <a href="img/terrassa.jpg" class="glightbox"><img src="img/terrassa.jpg" alt=""></a>
-        <a href="img/terrassa1.jpg" class="glightbox"><img src="img/terrassa1.jpg" alt=""></a>
+        <a href="img/barbacoa.jpg" class="glightbox">
+            <img src="img/barbacoa.jpg" alt="Zona de barbacoa">
+        </a>
+
+        <a href="img/corralet.jpg" class="glightbox">
+            <img src="img/corralet.jpg" alt="Es Corralet">
+        </a>
+
+        <a href="img/terrassa.jpg" class="glightbox">
+            <img src="img/terrassa.jpg" alt="Terraza">
+        </a>
+
+        <a href="img/terrassa1.jpg" class="glightbox">
+            <img src="img/terrassa1.jpg" alt="Terraza exterior">
+        </a>
     </div>
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer>
     <p data-lang="footer_derechos">© 2025 Ca'n Pedro</p>
 </footer>
 
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script src="lang.js"></script>
+
 </body>
 </html>

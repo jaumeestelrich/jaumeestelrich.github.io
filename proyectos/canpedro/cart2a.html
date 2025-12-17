@@ -7,9 +7,6 @@
 
     <!-- CSS principal -->
     <link rel="stylesheet" href="style.css">
-
- <!-- GLightbox CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 </head>
 
 <body>
@@ -39,19 +36,49 @@
 
 <!-- ================= CARTA ================= -->
 <main class="pagina carta">
-    <h1 data-lang="carta_titulo">Carta</h1>
 
-    <div class="carta-grid">
-        <a href="img/carta/1.jpg" class="glightbox"><img src="img/carta/1.jpg" alt="Carta Ca'n Pedro"></a>
-        <a href="img/carta/2.jpg" class="glightbox"><img src="img/carta/2.jpg" alt=""></a>
-        <a href="img/carta/3.jpg" class="glightbox"><img src="img/carta/3.jpg" alt=""></a>
-        <a href="img/carta/4.jpg" class="glightbox"><img src="img/carta/4.jpg" alt=""></a>
-        <a href="img/carta/5.jpg" class="glightbox"><img src="img/carta/5.jpg" alt=""></a>
-        <a href="img/carta/6.jpg" class="glightbox"><img src="img/carta/6.jpg" alt=""></a>
-        <a href="img/carta/7.jpg" class="glightbox"><img src="img/carta/7.jpg" alt=""></a>
-        <a href="img/carta/8.jpg" class="glightbox"><img src="img/carta/8.jpg" alt=""></a>
-        <a href="img/carta/9.jpg" class="glightbox"><img src="img/carta/9.jpg" alt=""></a>
-    </div>
+    <h1 data-lang="carta_titulo">Nuestra Carta</h1>
+    <p data-lang="carta_texto">
+        Platos elaborados con productos locales y cocina tradicional mallorquina.
+    </p>
+
+    <!-- ===== Sección Entrantes ===== -->
+    <section class="carta-seccion">
+        <h2 data-lang="carta_entrantes">Entrantes</h2>
+
+        <ul class="carta-lista">
+            <li><strong>Sobrasada mallorquina</strong> – Pan payés</li>
+            <li><strong>Queso curado</strong> – Km 0</li>
+            <li><strong>Pan con alioli</strong></li>
+        </ul>
+    </section>
+
+    <!-- ===== Sección Carnes ===== -->
+    <section class="carta-seccion">
+        <h2 data-lang="carta_carnes">Carnes a la brasa</h2>
+
+        <ul class="carta-lista">
+            <li><strong>Entrecot de ternera</strong></li>
+            <li><strong>Chuletas de cordero</strong></li>
+            <li><strong>Costillas de cerdo</strong></li>
+        </ul>
+    </section>
+
+    <!-- ===== Sección Postres ===== -->
+    <section class="carta-seccion">
+        <h2 data-lang="carta_postres">Postres</h2>
+
+        <ul class="carta-lista">
+            <li><strong>Gató con helado</strong></li>
+            <li><strong>Flan casero</strong></li>
+        </ul>
+    </section>
+
+    <!-- ===== Nota / PDF futuro ===== -->
+    <p class="carta-nota">
+        * Carta orientativa. Consulta disponibilidad en el restaurante.
+    </p>
+
 </main>
 
 <!-- ================= FOOTER ================= -->
@@ -59,18 +86,8 @@
     <p data-lang="footer_derechos">© 2025 Ca'n Pedro</p>
 </footer>
 
-<!-- GLightbox JS -->
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-
 <!-- Script idiomas -->
 <script src="lang.js"></script>
-
-<!-- Inicialización de la galería -->
-<script>
-    const lightbox = GLightbox({
-        selector: '.glightbox'
-    });
-</script>
 
 </body>
 </html>

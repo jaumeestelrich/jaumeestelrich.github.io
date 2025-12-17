@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-lang="title_galeria">Galería - Ca'n Pedro</title>
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- GLightbox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 </head>
+
 <body>
 
 <header class="header">
-    <div class="logo" data-lang="logo">Restaurante Ca'n Pedro Grill</div>
+    <div class="logo" data-lang="logo">Restaurante Ca'n Pedro</div>
 
     <nav class="nav">
         <a href="index.html" data-lang="menu_inicio">Inicio</a>
@@ -20,6 +25,7 @@
         <a href="contacto.html" data-lang="menu_contacto">Contacto</a>
     </nav>
 
+    <!-- Selector de idioma -->
     <div class="language-selector">
         <button data-lang-btn="es"><img src="img/flags/es.png" alt="ES"></button>
         <button data-lang-btn="en"><img src="img/flags/en.png" alt="EN"></button>
@@ -30,11 +36,11 @@
     </div>
 </header>
 
-<section class="galeria pagina">
+<main class="pagina galeria">
     <h1 data-lang="galeria_titulo">Galería</h1>
 
     <div class="galeria-grid">
-        <a href="img/1.jpg" class="glightbox"><img src="img/1.jpg" alt=""></a>
+        <a href="img/1.jpg" class="glightbox"><img src="img/1.jpg" alt="Galería Ca'n Pedro"></a>
         <a href="img/2.jpg" class="glightbox"><img src="img/2.jpg" alt=""></a>
         <a href="img/3.jpg" class="glightbox"><img src="img/3.jpg" alt=""></a>
         <a href="img/4.jpg" class="glightbox"><img src="img/4.jpg" alt=""></a>
@@ -48,13 +54,24 @@
         <a href="img/12.jpg" class="glightbox"><img src="img/12.jpg" alt=""></a>
         <a href="img/14.jpg" class="glightbox"><img src="img/14.jpg" alt=""></a>
     </div>
-</section>
+</main>
 
 <footer>
     <p data-lang="footer_derechos">© 2025 Ca'n Pedro</p>
 </footer>
 
+<!-- GLightbox JS -->
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<!-- Script idiomas -->
 <script src="lang.js"></script>
+
+<!-- Inicialización de la galería -->
+<script>
+    const lightbox = GLightbox({
+        selector: '.glightbox'
+    });
+</script>
+
 </body>
 </html>

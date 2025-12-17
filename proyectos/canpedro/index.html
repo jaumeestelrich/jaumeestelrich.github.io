@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-lang="title_index">Restaurante Ca'n Pedro</title>
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- ================= HEADER ================= -->
 <header class="header">
-
     <div class="logo" data-lang="logo">Restaurante Ca'n Pedro</div>
 
     <nav class="nav">
-        <a href="index.html" data-lang="menu_inicio">Inicio</a>
+        <a href="index.html" class="active" data-lang="menu_inicio">Inicio</a>
         <a href="carta.html" data-lang="menu_carta">Carta</a>
         <a href="corralet.html" data-lang="menu_corralet">Es Corralet</a>
         <a href="galeria.html" data-lang="menu_galeria">Galería</a>
         <a href="contacto.html" data-lang="menu_contacto">Contacto</a>
     </nav>
 
-    <!-- SELECTOR DE IDIOMA -->
+    <!-- Selector de idioma -->
     <div class="language-selector">
         <button data-lang-btn="es"><img src="img/flags/es.png" alt="ES"></button>
         <button data-lang-btn="en"><img src="img/flags/en.png" alt="EN"></button>
@@ -30,18 +32,23 @@
         <button data-lang-btn="it"><img src="img/flags/it.png" alt="IT"></button>
         <button data-lang-btn="ca"><img src="img/flags/ca.png" alt="CA"></button>
     </div>
-
 </header>
 
+<!-- ================= HERO ================= -->
 <section class="hero">
     <div class="hero-content">
         <h1 data-lang="hero_titulo">Bienvenidos a Ca'n Pedro</h1>
         <p data-lang="hero_subtitulo">Cocina tradicional mallorquina</p>
-        <a href="contacto.html" class="btn" data-lang="btn_reservar">Reservar</a>
+
+        <!-- Botón principal -->
+        <a href="contacto.html" class="btn" data-lang="btn_reservar">
+            Reservar
+        </a>
     </div>
 </section>
 
-<section class="carta-home">
+<!-- ================= SECCIONES DESTACADAS ================= -->
+<section class="pagina carta-home">
     <h2 data-lang="home_secciones">Explora nuestras secciones</h2>
 
     <div class="carta-grid">
@@ -52,7 +59,7 @@
         </a>
 
         <a href="corralet.html" class="plato">
-            <img src="img/corralet.jpg" alt="Corralet">
+            <img src="img/corralet.jpg" alt="Es Corralet">
             <h3 data-lang="home_corralet_titulo">Es Corralet</h3>
         </a>
 
@@ -69,11 +76,12 @@
     </div>
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer>
     <p data-lang="footer_derechos">© 2025 Ca'n Pedro</p>
 </footer>
 
-<!-- SOLO ESTE SCRIPT -->
+<!-- Script idiomas -->
 <script src="lang.js"></script>
 
 </body>

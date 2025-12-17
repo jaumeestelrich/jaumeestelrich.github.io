@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-lang="title_contacto">Contacto - Ca'n Pedro</title>
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
+<!-- ================= HEADER ================= -->
 <header class="header">
-    <div class="logo" data-lang="logo">Restaurante Ca'n Pedro Grill</div>
+    <div class="logo" data-lang="logo">Restaurante Ca'n Pedro</div>
 
     <nav class="nav">
         <a href="index.html" data-lang="menu_inicio">Inicio</a>
@@ -20,6 +27,7 @@
         <a href="contacto.html" class="active" data-lang="menu_contacto">Contacto</a>
     </nav>
 
+    <!-- Selector de idioma -->
     <div class="language-selector">
         <button data-lang-btn="es"><img src="img/flags/es.png" alt="ES"></button>
         <button data-lang-btn="en"><img src="img/flags/en.png" alt="EN"></button>
@@ -30,16 +38,22 @@
     </div>
 </header>
 
-<section class="pagina contacto">
+<!-- ================= CONTACTO ================= -->
+<main class="pagina contacto">
     <h1 data-lang="contacto_titulo">Contacto</h1>
 
+    <!-- ===== Métodos de contacto ===== -->
     <div class="contact-grid">
+
         <!-- WhatsApp -->
         <div class="contact-block block-whatsapp">
             <h3 data-lang="contacto_whatsapp_titulo">WhatsApp</h3>
             <p data-lang="contacto_whatsapp_texto">Reserva o consulta rápida</p>
-            <a href="https://wa.me/34619515830" class="btn-contact btn-whatsapp" target="_blank">
-                <i class="fab fa-whatsapp"></i> <span data-lang="contacto_whatsapp_btn">WhatsApp</span>
+            <a href="https://wa.me/34619515830"
+               class="btn-contact btn-whatsapp"
+               target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span data-lang="contacto_whatsapp_btn">WhatsApp</span>
             </a>
         </div>
 
@@ -48,7 +62,8 @@
             <h3 data-lang="contacto_telefono_titulo">Teléfono</h3>
             <p data-lang="contacto_telefono_texto">Llama directamente desde tu móvil</p>
             <a href="tel:+34619515830" class="btn-contact btn-phone">
-                <i class="fas fa-phone"></i> <span data-lang="contacto_telefono_btn">Llamar</span>
+                <i class="fas fa-phone"></i>
+                <span data-lang="contacto_telefono_btn">Llamar</span>
             </a>
         </div>
 
@@ -57,28 +72,39 @@
             <h3 data-lang="contacto_email_titulo">Email</h3>
             <p data-lang="contacto_email_texto">Escríbenos para información</p>
             <a href="mailto:info@canpedro.com" class="btn-contact btn-email">
-                <i class="fas fa-envelope"></i> <span data-lang="contacto_email_btn">Email</span>
+                <i class="fas fa-envelope"></i>
+                <span data-lang="contacto_email_btn">Email</span>
             </a>
         </div>
+
     </div>
 
-    <!-- Mapa (URL sin cambios) -->
+    <!-- ===== Mapa ===== -->
     <iframe
         width="100%"
         height="300"
         loading="lazy"
         allowfullscreen
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1618.3538893864454!2d3.28072!3d39.62046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12963fe6c5b842d9%3A0x8a5bec7ac89cd014!2sCarrer+Femenies+%26+Ma-4030%2C+07530+Sant+Lloren%C3%A7+des+Cardassar!5e1!3m2!1ses!2ses!4v1700000000000">
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1618.3538893864454!2d3.28072!3d39.62046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12963fe6c5b842d9%3A0x8a5bec7ac89cd014!2sCarrer+Femenies+%26+Ma-4030%2C+07530+Sant+Lloren%C3%A7+des+Cardassar!5e1!3m2!1ses!2ses">
     </iframe>
 
-    <a href="https://www.google.com/maps/dir/?api=1&destination=Carrer+Femenies+59,+Sant+Llorenç+des+Cardassar" class="btn-blue" target="_blank" data-lang="contacto_como_llegar">Cómo llegar</a>
-</section>
+    <!-- Botón cómo llegar -->
+    <a href="https://www.google.com/maps/dir/?api=1&destination=Carrer+Femenies+59,+Sant+Llorenç+des+Cardassar"
+       class="btn-blue"
+       target="_blank"
+       data-lang="contacto_como_llegar">
+        Cómo llegar
+    </a>
 
+</main>
+
+<!-- ================= FOOTER ================= -->
 <footer>
     <p data-lang="footer_derechos">© 2025 Ca'n Pedro</p>
 </footer>
 
+<!-- Script idiomas -->
 <script src="lang.js"></script>
+
 </body>
 </html>
-
