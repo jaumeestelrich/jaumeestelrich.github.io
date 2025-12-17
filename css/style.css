@@ -200,3 +200,38 @@ body {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
 }
+
+
+#contacto a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+    #contacto a:hover {
+        text-decoration: underline;
+    }
+.contact-form {
+    max-width: 500px;
+    margin-top: 2rem;
+}
+
+    .contact-form label {
+        display: block;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 0.6rem;
+        margin-top: 0.3rem;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-family: inherit;
+    }
+
+    .contact-form button {
+        margin-top: 1rem;
+    }
