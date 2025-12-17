@@ -8,9 +8,8 @@
     <!-- CSS principal -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Lightbox galería -->
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+     <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 </head>
 
 <body>
@@ -79,9 +78,20 @@
     <p data-lang="footer_derechos">© 2025 Ca'n Pedro</p>
 </footer>
 
+<!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script src="lang.js"></script>
+
+<!-- Inicialización de la galería -->
+<script>
+    const lightbox = GLightbox({
+        selector: '.glightbox'
+    });
+</script>
 
 </body>
 </html>
