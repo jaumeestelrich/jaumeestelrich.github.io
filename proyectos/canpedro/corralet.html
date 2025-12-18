@@ -8,7 +8,7 @@
     <!-- CSS principal -->
     <link rel="stylesheet" href="style.css">
 
-     <!-- GLightbox CSS -->
+    <!-- GLightbox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 </head>
 
@@ -39,15 +39,12 @@
 
 <!-- ================= CONTENIDO PRINCIPAL ================= -->
 <main class="pagina">
-
-    <!-- Presentación del espacio -->
     <!-- Nombre propio: no se traduce -->
     <h1 data-lang="corralet_titulo">Es Corralet d'en Pep</h1>
 
     <p data-lang="corralet_texto">
         Espacio privado para celebraciones, cumpleaños, reuniones y eventos.
     </p>
-
 </main>
 
 <!-- ================= GALERÍA CORRALET ================= -->
@@ -55,19 +52,19 @@
     <h2 data-lang="corralet_galeria_titulo">Galería</h2>
 
     <div class="galeria-grid">
-        <a href="img/barbacoa.jpg" class="glightbox">
+        <a href="img/barbacoa.jpg" class="glightbox" data-gallery="corralet">
             <img src="img/barbacoa.jpg" alt="Zona de barbacoa">
         </a>
 
-        <a href="img/corralet.jpg" class="glightbox">
+        <a href="img/corralet.jpg" class="glightbox" data-gallery="corralet">
             <img src="img/corralet.jpg" alt="Es Corralet">
         </a>
 
-        <a href="img/terrassa.jpg" class="glightbox">
+        <a href="img/terrassa.jpg" class="glightbox" data-gallery="corralet">
             <img src="img/terrassa.jpg" alt="Terraza">
         </a>
 
-        <a href="img/terrassa1.jpg" class="glightbox">
+        <a href="img/terrassa1.jpg" class="glightbox" data-gallery="corralet">
             <img src="img/terrassa1.jpg" alt="Terraza exterior">
         </a>
     </div>
@@ -78,17 +75,12 @@
     <p data-lang="footer_derechos">© 2025 Ca'n Pedro</p>
 </footer>
 
-<!-- GLightbox JS -->
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-
-
-<!-- Scripts -->
+<!-- ================= SCRIPTS ================= -->
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script src="lang.js"></script>
 
-<!-- Inicialización de la galería -->
 <script>
-    const lightbox = GLightbox({
+    GLightbox({
         selector: '.glightbox'
     });
 </script>

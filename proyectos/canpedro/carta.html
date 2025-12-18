@@ -8,8 +8,8 @@
     <!-- CSS principal -->
     <link rel="stylesheet" href="style.css">
 
- <!-- GLightbox CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <!-- Font Awesome (iconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -37,21 +37,75 @@
     </div>
 </header>
 
-<!-- ================= CARTA ================= -->
-<main class="pagina carta">
-    <h1 data-lang="carta_titulo">Carta</h1>
+<!-- ================= CONTENIDO ================= -->
+<main class="pagina">
 
-    <div class="carta17:56 17/12/2025-grid">
-        <a href="img/carta/1.jpg" class="glightbox"><img src="img/carta/1.jpg" alt="Carta Ca'n Pedro"></a>
-        <a href="img/carta/2.jpg" class="glightbox"><img src="img/carta/2.jpg" alt=""></a>
-        <a href="img/carta/3.jpg" class="glightbox"><img src="img/carta/3.jpg" alt=""></a>
-        <a href="img/carta/4.jpg" class="glightbox"><img src="img/carta/4.jpg" alt=""></a>
-        <a href="img/carta/5.jpg" class="glightbox"><img src="img/carta/5.jpg" alt=""></a>
-        <a href="img/carta/6.jpg" class="glightbox"><img src="img/carta/6.jpg" alt=""></a>
-        <a href="img/carta/7.jpg" class="glightbox"><img src="img/carta/7.jpg" alt=""></a>
-        <a href="img/carta/8.jpg" class="glightbox"><img src="img/carta/8.jpg" alt=""></a>
-        <a href="img/carta/9.jpg" class="glightbox"><img src="img/carta/9.jpg" alt=""></a>
-    </div>
+    <!-- ===== MENÚS ===== -->
+    <h1 data-lang="carta_titulo">Nuestra oferta</h1>
+
+    <section class="contact-grid">
+
+        <!-- Menú del día -->
+        <div class="contact-block block-phone">
+            <h3 data-lang="menu_dia_titulo">Menú del día</h3>
+            <p data-lang="menu_dia_texto">
+                Primer plato + segundo plato + postre<br>
+                <strong>16 €</strong><br>
+                Lunes a viernes
+            </p>
+        </div>
+
+        <!-- Menú sábado -->
+        <div class="contact-block block-email">
+            <h3 data-lang="menu_sabado_titulo">Menú sábado</h3>
+            <p data-lang="menu_sabado_texto">
+                Primer plato + segundo plato + postre<br>
+                <strong>20 €</strong>
+            </p>
+        </div>
+
+    </section>
+
+    <!-- ===== CARTA PDF ===== -->
+    <section class="pagina">
+        <h2 data-lang="carta_pdf_titulo">Nuestra carta</h2>
+        <p data-lang="carta_pdf_texto">
+            Consulta nuestra carta completa con platos tradicionales y especialidades a la brasa.
+        </p>
+
+        <a href="docs/carta.pdf" class="btn-contact btn-verde" target="_blank">
+            <i class="fas fa-file-pdf"></i> <span data-lang="ver_carta">Ver carta</span>
+        </a>
+    </section>
+
+    <!-- ===== CENAS MARIDAJE ===== -->
+    <section class="pagina">
+        <h2 data-lang="maridaje_titulo">Cenas maridaje</h2>
+
+        <p data-lang="maridaje_texto">
+            Organizamos cenas maridaje con menús especiales y vinos seleccionados.<br>
+            Habitualmente el último jueves de cada mes.
+        </p>
+
+        <a href="https://www.facebook.com/barcanpedro" class="btn-contact btn-whatsapp" target="_blank">
+            <i class="fab fa-facebook-f"></i> <span data-lang="mas_info">Más información en Facebook</span>
+        </a>
+    </section>
+
+    <!-- ===== MENÚS NAVIDAD ===== -->
+    <section class="pagina">
+        <h2 data-lang="navidad_titulo">Menús para llevar (Navidad)</h2>
+
+        <p data-lang="navidad_texto">
+            Durante la época navideña ofrecemos menús especiales para llevar.<br>
+            Consulta disponibilidad y condiciones.
+        </p>
+
+        <a href="https://www.facebook.com/barcanpedro" class="btn-contact btn-whatsapp" target="_blank">
+            <i class="fab fa-facebook-f"></i> <span data-lang="consultar">Consultar en Facebook</span>
+        </a>
+    </section>
+
 </main>
 
 <!-- ================= FOOTER ================= -->
@@ -59,18 +113,8 @@
     <p data-lang="footer_derechos">© 2025 Ca'n Pedro</p>
 </footer>
 
-<!-- GLightbox JS -->
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-
 <!-- Script idiomas -->
 <script src="lang.js"></script>
-
-<!-- Inicialización de la galería -->
-<script>
-    const lightbox = GLightbox({
-        selector: '.glightbox'
-    });
-</script>
 
 </body>
 </html>

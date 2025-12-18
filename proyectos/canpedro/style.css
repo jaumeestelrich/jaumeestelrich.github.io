@@ -8,7 +8,9 @@
     --beige-fondo: #f0e7d8;
     --negro: #222;
     --blanco: #fff;
-}
+    --azul: #1877f2,
+    --azul1:  #0f5bd8; 
+} 
 
 /* =========================
    RESET Y GENERAL
@@ -132,7 +134,7 @@ h1, h2, h3 {
 }
 
 /* =========================
-   CARTA HOME (GRID)
+   CARTA HOME
    ========================= */
 .carta-home {
     padding: 40px 20px;
@@ -158,17 +160,15 @@ h1, h2, h3 {
         width: 100%;
         height: 200px;
         object-fit: cover;
-        object-position: center;
         border-radius: 8px;
     }
 
-/* Ajuste especial primera imagen */
 .carta-grid .plato:first-child img {
     object-position: top;
 }
 
 /* =========================
-   GALERÍA
+   GALERÍA (galeria + corralet)
    ========================= */
 .galeria-grid {
     display: grid;
@@ -213,6 +213,7 @@ h1, h2, h3 {
         box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
 
+/* Fondos bloques */
 .block-whatsapp {
     background-color: #016630;
 }
@@ -225,6 +226,13 @@ h1, h2, h3 {
     background-color: #016630;
 }
 
+/* Texto visible */
+.contact-block h3,
+.contact-block p {
+    color: white;
+}
+
+/* Botones contacto */
 .btn-contact {
     display: inline-block;
     padding: 12px 25px;
@@ -233,13 +241,27 @@ h1, h2, h3 {
     text-decoration: none;
     color: white;
     border-radius: 8px;
-    background: inherit;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
 }
 
     .btn-contact:hover {
         transform: translateY(-3px) scale(1.05);
+        filter: brightness(1.1);
     }
+
+/* Colores botones */
+.btn-whatsapp {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+}
+
+.btn-phone {
+    background: linear-gradient(135deg, #2e8b57, #128C7E);
+}
+
+.btn-email {
+    background: linear-gradient(135deg, #2e8b57, #128C7E);
+}
 
 /* =========================
    FOOTER
@@ -255,7 +277,7 @@ footer {
 }
 
 /* =========================
-   RESPONSIVE (MÓVIL)
+   RESPONSIVE
    ========================= */
 @media (max-width: 768px) {
 
@@ -298,3 +320,47 @@ footer {
         width: 100%;
     }
 }
+
+/* =========================
+   BOTÓN VER CARTA
+   ========================= */
+.btn-carta {
+    background: linear-gradient(135deg, #3c5a44, #4f7759);
+    padding: 14px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+    .btn-carta:hover {
+        transform: translateY(-3px);
+        filter: brightness(1.1);
+    }
+
+
+/* =========================
+   BOTÓN VERDE (ACCIONES PRINCIPALES)
+   ========================= */
+.btn-verde {
+    background: linear-gradient( 135deg, var(--verde-barra), var(--verde-barra-claro) );
+    color: white;
+}
+
+    .btn-verde:hover {
+        filter: brightness(1.1);
+    }
+
+
+/* =========================
+   BOTÓN FACEBOOK
+   ========================= */
+.btn-facebook {
+    background: linear-gradient( 135deg, var(--azul), var(--azul1) );
+    color: white;
+}
+
+    .btn-facebook:hover {
+        filter: brightness(1.1);
+    }
